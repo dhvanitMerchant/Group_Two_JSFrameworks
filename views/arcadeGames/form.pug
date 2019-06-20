@@ -16,7 +16,7 @@ form(action=(arcadeGame ? '/arcadeGames/update' : '/arcadeGames'), method="POST"
       = arcadeGame ? arcadeGame.description : null
 
   .form-group
-    label Status
+    label Genre
     select.form-control(name="arcadeGame[genre]", required)
       each genre in ['FIGHTING', 'SPORTS', 'PUZZLE', 'ARCADE', 'PLATFORMER', 'OTHER']
 
